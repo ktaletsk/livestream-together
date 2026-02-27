@@ -1,0 +1,8 @@
+name: livestream-together-26-01-23
+channels:
+ -  conda-forge
+dependencies:
+ - python=3.14
+ - marimo
+ - pandas
+ - anywidget
