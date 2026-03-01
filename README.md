@@ -14,7 +14,7 @@ Each episode follows a TidyTuesday dataset.
 
 ## Episodes
 
-### Ep 1 — Pokemon
+### Ep 1 — Pokemon (Feb 27, 2026)
 
 https://github.com/user-attachments/assets/3732e8c5-59e5-40e7-a4f8-1db2d586ae53
 
