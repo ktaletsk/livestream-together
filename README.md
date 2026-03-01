@@ -22,13 +22,13 @@ https://github.com/user-attachments/assets/3732e8c5-59e5-40e7-a4f8-1db2d586ae53
 
 **What each host built:**
 - **Konstantin** — Marimo notebook; discovered that Marimo's dataframe viewer renders Pokemon sprites inline from URLs. Built an AnyWidget comparison card widget to view stats side-by-side; battle mode is a work-in-progress.
-- **Rodrigo** — PyScript app pulling sprites and stats live from the PokeAPI (no local image hosting). Supports type/legendary filters and runs animated turn-based battles with sound.
+- **Rodrigo** — PyScript app pulling sprites and stats live from the PokeAPI (no local image hosting). Supports type/legendary filters and runs animated turn-based battles with sound. ([app](https://pokemon-simulator-pyscript.netlify.app/) · [repo](https://github.com/rodrigosf672/pyscript-pokemon-app))
 - **Yann** — MATLAB running inside a GitHub Codespace dev container, served as a full browser-based IDE. Showed the MATLAB VS Code extension working inside Positron and discussed JupyterHub integration for enterprise deployments.
 
 **Topics discussed:**
 - Notebook ecosystem: Jupyter (700+ extensions), Marimo reactivity, Positron's new notebook editor (Feb 2026)
 - Docker and dev containers: reproducible experiments, JupyterHub at scale, Ollama + Open UI setups, remote SSH from Positron into AWS
-- Jupyter extension marketplace Codespaces launcher: 900 auto-generated branches, one per extension
+- [JupyterLab extension marketplace](https://labextensions.dev) Codespaces launcher: 900 auto-generated branches, one per extension
 - Package management: UV vs Conda; praise for Marimo's inline package install UX
 - Claude Code used live to sketch a battle mechanic — left as a cliffhanger
 
