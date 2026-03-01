@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/3732e8c5-59e5-40e7-a4f8-1db2d586ae53
 
 **Dataset:** [TidyTuesday 2025-04-01 Pokemon](https://github.com/rfordatascience/tidytuesday) — 949 rows, 22 columns (stats, types, size, image URLs).
 
-**What each host built:**
+**What each host showed:**
 - **Konstantin** — Marimo notebook; discovered that Marimo's dataframe viewer renders Pokemon sprites inline from URLs. Built an AnyWidget comparison card widget to view stats side-by-side; battle mode is a work-in-progress.
 - **Rodrigo** — PyScript app pulling sprites and stats live from the PokeAPI (no local image hosting). Supports type/legendary filters and runs animated turn-based battles with sound. ([app](https://pokemon-simulator-pyscript.netlify.app/) · [repo](https://github.com/rodrigosf672/pyscript-pokemon-app))
 - **Yann** — MATLAB running inside a GitHub Codespace dev container, served as a full browser-based IDE. Showed the MATLAB VS Code extension working inside Positron and discussed JupyterHub integration for enterprise deployments.
