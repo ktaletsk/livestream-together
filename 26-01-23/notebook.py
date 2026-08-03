@@ -413,8 +413,19 @@ def _(anywidget, data, mo, traitlets):
 @app.cell
 def _(df):
     def fix_url(url):
-        if isinstance(url, str) and url.startswith("//"):
-            return "https:" + url
+        if not isinstance(url, str):
+            return url
+        if url.startswith("//"):
+            url = "https:" + url
+
+        old_prefix = "https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/"
+        new_prefix = "https://raw.githubusercontent.com/HybridShivam/Pokemon/refs/heads/master/assets/images/"
+        if url.startswith(old_prefix):
+            filename = url[len(old_prefix):]
+            stem, separator, suffix = filename.rpartition(".")
+            if separator and suffix == "png" and stem.isdigit() and len(stem) == 3:
+                filename = f"{stem.zfill(4)}.{suffix}"
+            return new_prefix + filename
         return url
 
     data = {}
